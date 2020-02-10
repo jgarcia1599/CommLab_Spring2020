@@ -1,0 +1,44 @@
+body{
+    font-family: 'Special Elite', cursive;
+
+
+}
+
+
+h1{
+    font-size:3em;
+}
+
+
+p {
+
+    font-size: 2em;
+    width:300px;
+    background-color: cadetblue;
+}
+
+.textColor{
+    color: rgb(66, 121, 40);
+    border-width:5px ;
+    border-style: solid;
+    text-align: center;    
+    background-color: bisque;
+
+}
+#topSection{
+    font-family:"Arial";
+    color:red;
+    background-color:pink;
+    padding:40px ;
+    width:800px ;
+    height:100px ;
+    margin:0 auto ;
+    border-width:5px ;
+    border-style: solid;
+    text-align:center;
+}
+a{
+    width: 450px ;
+    background-color: chocolate;
+    display:block;
+}
