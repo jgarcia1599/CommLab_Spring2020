@@ -3,7 +3,8 @@ header{
   background-color: rgb(255, 73, 73); /*orange*/
 	position: relative;
 	top: 20px;
-	height: 167px;
+  height: 167px;
+  cursor: pointer;
 }
 
 #title{

@@ -39,6 +39,11 @@ $(document).ready(function(){
             
 
     })
+    $('header').click(function(){
+        $('html,body').animate({
+            scrollTop: $('main').offset().top},
+            'slow'); 
+    })
     console.log("Hiiiii")
     animate();
     var d2img= $(".D2img");
