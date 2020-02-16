@@ -37,8 +37,6 @@ yay.preLoad = true;
 yay.controls = true;
 
 $(document).ready(function(){
-
-
     $(".headerimg").click(function(){
         console.log("D2 IMG CLICKED");
         var id = $(this).attr('id');
@@ -48,8 +46,6 @@ $(document).ready(function(){
         $('html,body').animate({
             scrollTop: $('#'+idnum).offset().top},
             'slow');
-            
-
     })
     $('header').click(function(){
         $('html,body').animate({
@@ -184,7 +180,6 @@ const draw = () => {
         time=0
     }
 }
-
 function change_image(i,src) {
     
     var images = $(".headerimg");
