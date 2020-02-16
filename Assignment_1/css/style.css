@@ -5,6 +5,7 @@ header{
 	top: 20px;
   height: 167px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 #title{
@@ -13,27 +14,37 @@ header{
     font-size: 50px;
 }
 
+#textTitle {
+  font-size: 50px;
+  bottom: 0;
+  text-align: left;
+}
+
 .logosize{
   width: 180px;
   height: 167px;
   background-color: rgb(255, 251, 251);
   border-style: solid;
-
-
+  float:left;
 }
 .pacman{
   border-style: solid;
 }
 
-.D2img:hover{
-  background-color: greenyellow;
+.headerimg:hover{
+  background-color: yellow;
   cursor: pointer;
 
+}
+.video{
+width: 50%;
+margin: 0 auto; 
+margin-left:10%;
 }
 main{
   font-family: 'Reem Kufi', sans-serif;
   font-size: 30px;
-  margin:30px;
+  margin:200px;
 
 
 }
@@ -41,6 +52,27 @@ main{
 .counter-right{
   text-align:right;
   margin:80px;
+
+}
+.counter-center{
+  text-align:left;
+  margin:80px;
+
+}
+.counter-center h2{
+  text-align:center;
+
+}
+
+#uparrow{
+  width: 50px ; 
+  height: 50px; 
+  position: fixed; 
+  bottom: 50px; 
+  right: 50px;
+}
+#uparrow:hover{
+  cursor: pointer;
 
 }
 
@@ -95,4 +127,9 @@ main{
       max-width: 100%;
     }
   }
+
+ #starbucks {
+    width: 32%;
+    margin-left: 35%;
+}
   /* ------------------- RESPONSIVE IMAGE GRID -------------------------*/
