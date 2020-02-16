@@ -68,7 +68,7 @@ var requestAnimationFrame = window.requestAnimationFrame       ||
                             window.mozRequestAnimationFrame    ||
                             window.msRequestAnimationFrame; 
 var time = 0;
-var fps = 3; //frames per second to determine how many frames I want per second   
+var fps = 2; //frames per second to determine how many frames I want per second   
 
 const animate = () => {
     //use set timeout function to slowdown animation frame.
@@ -174,10 +174,14 @@ const draw = () => {
         change_image(15,happy);
         yay.play();    
     }
-    else if (time == 50){
+    else if (time == 23){
         console.log(time);
         change_image(15,img_srcs[15])
-        time = 0;
+    }
+    else if (time == 45){
+        //End delay
+        console.log(time)
+        time=0
     }
 }
 
