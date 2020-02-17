@@ -19,6 +19,8 @@ Overall, I am very content with the result. In particular, I was fascinated by t
 
 ## Wireframes
 
-Below are the original wireframes I designed for the website. As you can see, the final look of the site ended up being very different than intended. 
+Below are the original wireframes I designed and feedback notes I jot down for the website. As you can see, the final look of the site ended up being very different than intended. 
 
 <img src="media/30MFF-1.jpg">
+<img src="media/30MFF-2.jpg">
+<img src="media/30MFF-3.jpg">
