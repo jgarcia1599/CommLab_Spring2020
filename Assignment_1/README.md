@@ -1,6 +1,6 @@
 # Documentation
 
-<h1><a href=":http://jfg388.nyuadim.com/Assignment_1/">Link to website</a></h1>
+<a href=":http://jfg388.nyuadim.com/Assignment_1/">Link to website</a>
 
 ## Project Description
 
