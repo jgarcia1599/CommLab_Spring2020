@@ -1,44 +1,98 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<title>Assignment 2</title>
+	<link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="webfont/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="webfont_2/stylesheet.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+    
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   
+	
+	
+</head>
 
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<body>
+    <main class="scroll-container-input">	
+		<section class="scroll-section-main">
+            <img id="torch" src="torch.png" data-aos="fade-down" data-aos-duration="500">
+            <div id="welcome_message">
+                <h1>In a an Island faar away</h1>
 
-
-        <form id="input_form">
-            <h1>Input 1: </h1>
-            <input type="text" id="input1" name="input1" required><br><br>
-            <h1>Input 2: </h1>
-            <input type="text" id="input1" name="input1" required><br><br>
-            <input type="submit" value="Submit">
-        </form>
-        <div id="results"></div>
-         <div id="container">
-            <div id="inner-container">
-                <div class="img_container">
-                    <img class="img-side" src="dog.jpg">
-                    <div class="text-block">
-                      <p>What a beautiful sunrise</p>
-                    </div>
-                  </div>
-                  
-                <img class="img-side" src="dog2.jpg">
             </div>
-        </div>
-
-
+            <form id="input_form"  data-aos="zoom-in" data-aos-duration="3000">
+                <div>
+                    <h1>A Confessions Story</h1><br><br>
+                    <p>Being an New York University Abu Dhabi student has its perks. A small campus setting provides a better sense of community and a more personal educational experience.</p>
+                    <p>However, a small campus usually means that rumors spread like wildfire and social media pages like <a href="https://www.facebook.com/NYUADconfessions">NYUAD Confessions</a> oftentimes become the breeding ground of targeted prejudice and hatred.</p>
+                    <p>No one is safe from the "BigBrother"-esque oversight of the typical NYUAD student. Answer the following questions to prove it to yourself.</p>
+                    <br>
+                </div>
+                    <p>Nationality of the last person you sat next to in class: </p>
+                    <input type="text" id="input1" name="input1" maxlength="10" required><br><br>
+                    <p>Name of the last person you shared an elevator with: </p>
+                    <input type="text" id="input2" name="input2" maxlength="10" required><br><br>
+                    <p>An amusing activity you did for more than an hour today: </p>
+                    <input type="text" id="input3" name="input3" maxlength="10" required><br><br>
+                    <p>Worst rap verse you've heard: </p>
+                    <input type="text" id="input4" name="input4" maxlength="20"required><br><br>
+                    <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section class="scroll-section">
+            <div class="image_container">
+                <img class = "panel" src="withtext/panel_1.jpeg">
+            </div>
+            
+        </section>
+        <section class="scroll-section">
+            <div class="image_container">
+                <img class = "panel" src="withtext/panel_2.jpeg">
+                <div id="image_text_1">kkkkkkkkkkk</div>
+                <div id="image_text_2">Hello</div>
+            </div>
+            
+        </section>
+        <section class="scroll-section">
+            <div class="image_container">
+                <img class = "panel" src="withtext/panel_3.jpeg">
+                <div id="image_text_3">Hellokdkdkdmdjsjsjsj</div>
+            </div>
+        </section>
+        <section class="scroll-section">
+            
+                <img class = "panel" src="withtext/panel_4.jpeg">
+            </div>
+        </section>
+        <section class="scroll-section">
+            <div class="image_container">
+                <img class = "panel" src="withtext/panel_5.jpeg">
+                <div id="image_text_4">Hello</div>
+                <div id="image_text_5">Hello</div>
+            </div>
+        </section>
+        <section class="scroll-section">
+            <img class = "panel" src="withtext/panel_6.jpeg">
+        </section>
+	</main>
 
         
-        <script src="script.js"></script>
-    </body>
+
+		
+    <script src="script.js"></script>
+ 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<!-- <script>
+   		
+ 	</script> -->
+
+</body>
+
 </html>
+
+
+
+

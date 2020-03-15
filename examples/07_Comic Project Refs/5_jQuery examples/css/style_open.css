@@ -1,0 +1,47 @@
+body {
+	font-family: 'Lobster Two', cursive;
+	font-size: 2em;
+	background-color: lightblue;
+}
+
+
+#container {
+	background-color: moccasin;
+	width: 1000px;
+	margin: 50px auto;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	align-items: top;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+.boxText {
+	box-sizing: border-box; /*prevents padding from making box size grow*/
+	padding: 15px;
+}
+
+.myElement {
+	width: 200px;
+	height: 200px;
+	background-color: coral;
+	margin: 10px;
+	text-align: center;
+}
+
+#stretchBox {
+	width: 860px;
+	height: 100px;
+	background-color: coral;
+	margin-top: 10px;
+}
+
+.makeCrimson {
+	background-color: crimson;
+}
+
+
+
+
+

@@ -1,0 +1,57 @@
+body {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 2em;
+	background-color: wheat;
+	color: wheat;
+}
+
+#titleSection {
+	background-color: cornsilk;
+	width: 800px;
+	margin: 50px auto;
+	text-align: center;
+	line-height: 80vh;
+	font-size: 3em;
+	color: olive;
+}
+
+#container {
+	background-color: cornsilk;
+	width: 800px;
+	margin: 50px auto;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	align-items: top;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+.boxText {
+	box-sizing: border-box; /*prevents padding from making box size grow*/
+	padding: 15px;
+}
+
+.myElement {
+	width: 200px;
+	height: 200px;
+	background-color: olive;
+	margin: 250px 10px;
+	text-align: center;
+}
+
+#stretchBox {
+	width: 500px;
+	height: 250px;
+	background-color: olive;
+	margin-top: 150px;
+	margin-bottom: 30vh;
+	text-align: center;
+}
+
+
+
+
+
+
+

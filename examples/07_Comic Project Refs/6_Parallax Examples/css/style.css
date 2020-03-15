@@ -1,0 +1,38 @@
+/*::-webkit-scrollbar { 
+    display: none; 
+}*/
+
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+#parallax-container {
+  background-color: red;
+  height: 1000px;
+  display: block;
+  background: red;
+}
+#parallax-container div {
+  position: fixed;
+  top: 0px;
+  background-position: center !important;
+  transform: translateY(0px);
+  height: 1000px;
+  width: 100%;
+}
+
+#coverBox {
+  position: relative;
+  top: 20px;
+  background-color: #210002;
+  height: 1000px;
+  padding-top: 50px;
+}
+
+p {
+  color: white;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  padding: 0px 70px;
+}
