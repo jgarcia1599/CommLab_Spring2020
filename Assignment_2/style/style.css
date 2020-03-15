@@ -25,7 +25,7 @@ body {
 
 
 .scroll-section {
-	background-image: url("background_2.jpeg");
+	background-image: url("../media/background_2.jpeg");
 	scroll-snap-align: center;
 	height: 100vh;
 	display: flex;
@@ -38,7 +38,7 @@ body {
 	/* flex-flow: wrap; */
 }
 .scroll-section-main {
-	background-image: url("background_2.jpeg");
+	background-image: url("../media/background_2.jpeg");
 	scroll-snap-align: center;
 	height: 100vh;
 	display: flex;
@@ -93,7 +93,7 @@ form div h1{
   /* Bottom right text */
 #image_text_1{
 font-family: 'flottenheimer_demoregular';
-font-size:10px;
+font-size:13px;
 position: absolute;
 bottom: 37%;
 right: 26%;
@@ -104,7 +104,7 @@ padding-right: 10%;
 }
 #image_text_2{
 font-family: 'flottenheimer_demoregular';
-font-size:10px;
+font-size:13px;
 position: absolute;
 bottom: 43%;
 right: 78%;
@@ -115,7 +115,7 @@ padding-right: 10%;
 }
 #image_text_3{
 font-family: 'flottenheimer_demoregular';
-font-size:10px;
+font-size:13px;
 position: absolute;
 bottom: 65%;
 right: 7.5%;
@@ -126,7 +126,7 @@ padding-right: 10%;
 }
 #image_text_4{
 font-family: 'flottenheimer_demoregular';
-font-size:10px;
+font-size:13px;
 position: absolute;
 bottom: 34%;
 right: 18%;
@@ -137,7 +137,7 @@ padding-right: 10%;
 }
 #image_text_5{
 font-family: 'flottenheimer_demoregular';
-font-size:10px;
+font-size:13px;
 position: absolute;
 bottom: 30.6%;
 right: 6%;

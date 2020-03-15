@@ -24,7 +24,7 @@ $('#input_form').submit(function(e) {
     }
     console.log(form_responses)
     $('#input_form').hide();
-    $('#welcome_message').fadeIn("slow")
+    $('#welcome_message').fadeIn();
     $('.scroll-section').show();
     $('#image_text_1').text(form_responses[1]);
     $('#image_text_2').text(form_responses[2]);
@@ -36,7 +36,6 @@ $('#input_form').submit(function(e) {
 
   $("#new_confessions").click(function(){
     location.reload(true);
-
   })
 
 
