@@ -34,6 +34,11 @@ $('#input_form').submit(function(e) {
 
   });
 
+  $("#new_confessions").click(function(){
+    location.reload(true);
+
+  })
+
 
 
 

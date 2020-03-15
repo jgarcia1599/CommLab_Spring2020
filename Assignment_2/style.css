@@ -147,3 +147,14 @@ padding-left: 10%;
 padding-right: 10%;
 }
 
+#new_confessions{
+	font-size:40px;
+}
+#new_confessions:hover{
+	font-size:40px;
+	color:#57068c;
+	cursor:pointer
+
+}
+
+
