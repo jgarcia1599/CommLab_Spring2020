@@ -15,15 +15,13 @@ let cat,cat_x,cat_y,cat_width,cat_height,cat_sound;
 let aimg_width,aimg_height;
 
 
-let button;
-
+var disable_animals = false;
 
 
 var sounds_played = [];
 var times = [];
 var timecount = 0;
 var doRemixing = false;
-let songRemixedcounter = 0;
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
@@ -67,11 +65,6 @@ function setup() {
 }
 function draw() {
   timecount+=1;
-  // console.log("Time: "+timecount);
-  
-  // console.log(timecount)
-  
-  
   
   windowResized();
   background(bg);
@@ -128,100 +121,97 @@ function draw() {
   image(bird,bird_x,bird_y,aimg_width,aimg_height);
   
   if (doRemixing){
+      disable_animals = true
       for (var i = 0;i<sounds_played.length;i++){
-        // console.log("inside for loop")
-        // console.log(sounds_played[i]);
-        // console.log(times[i]);
         if (timecount == times[i]){
           console.log("okay please work play sound if not ill be so saaaad");
           sounds_played[i].play();
         }
+  }    
   }
-    
+  else{
+    disable_animals = false;
   }
 
   
   
 }
-
 function mouseClicked(){
-  console.log('confirmation that the mouse got clicked!');
-  console.log(mouseX, mouseY); //where is the mouse anyway?
-  // console.log(sounds_played);
-  // console.log(times);
-  
-  if ((mouseX<=(horse_x+aimg_width)&& mouseX>=horse_x) && (mouseY<=(horse_y+aimg_height)&&mouseY>=horse_y)){
-    console.log("Inside horse");
-    horse_sound.play();
-    sounds_played.push(horse_sound);
-    times.push(timecount);
-  }
-  
-  
-  if ((mouseX<=(pig_x+aimg_width)&& mouseX>=pig_x) && (mouseY<=(pig_y+aimg_height)&&mouseY>=pig_y)){
-    console.log("Inside pig");
-    pig_sound.play();
-    sounds_played.push(pig_sound);
-    times.push(timecount);
-  }
-  
-  
-  if ((mouseX<=(dolphin_x+aimg_width)&& mouseX>=dolphin_x) && (mouseY<=(dolphin_y+aimg_height)&&mouseY>=dolphin_y)){
-    console.log("Inside dolphin")
-    dolphin_sound.play()
-    sounds_played.push(dolphin_sound);
-    times.push(timecount);
-  }
- 
-  
-  if ((mouseX<=(goat_x+aimg_width)&& mouseX>=goat_x) && (mouseY<=(goat_y+aimg_height)&&mouseY>=goat_y)){
-    console.log("Inside goat");
-    goat_sound.play();
-    sounds_played.push(goat_sound);
-    times.push(timecount);
-  }
-  
-  if ((mouseX<=(duck_x+aimg_width)&& mouseX>=duck_x) && (mouseY<=(duck_y+aimg_height)&&mouseY>=duck_y)){
-    console.log("Inside duck");
-    duck_sound.play();
-    sounds_played.push(duck_sound);
-    times.push(timecount);
-  }
-  
-  if ((mouseX<=(dog_x+aimg_width)&& mouseX>=dog_x) && (mouseY<=(dog_y+aimg_height)&&mouseY>=dog_y)){
-    console.log("Inside dog");
-    dog_sound.play();
-    sounds_played.push(dog_sound);
-    times.push(timecount);
-  }
-
-  if ((mouseX<=(cow_x+aimg_width)&& mouseX>=cow_x) && (mouseY<=(cow_y+aimg_height)&&mouseY>=cow_y)){
-    console.log("Inside cow");
-    cow_sound.play();
-    sounds_played.push(cow_sound);
-    times.push(timecount);
-  }
-  
-  if ((mouseX<=(bird_x+aimg_width)&& mouseX>=bird_x) && (mouseY<=(bird_y+aimg_height)&&mouseY>=bird_y)){
-    console.log("Inside bird");
-    bird_sound.play();
-    sounds_played.push(bird_sound);
-    times.push(timecount);
+  if (disable_animals == false){
+    if ((mouseX<=(horse_x+aimg_width)&& mouseX>=horse_x) && (mouseY<=(horse_y+aimg_height)&&mouseY>=horse_y)){
+      console.log("Inside horse");
+      horse_sound.play();
+      sounds_played.push(horse_sound);
+      times.push(timecount);
+    }
     
-  }
+    
+    if ((mouseX<=(pig_x+aimg_width)&& mouseX>=pig_x) && (mouseY<=(pig_y+aimg_height)&&mouseY>=pig_y)){
+      console.log("Inside pig");
+      pig_sound.play();
+      sounds_played.push(pig_sound);
+      times.push(timecount);
+    }
+    
+    
+    if ((mouseX<=(dolphin_x+aimg_width)&& mouseX>=dolphin_x) && (mouseY<=(dolphin_y+aimg_height)&&mouseY>=dolphin_y)){
+      console.log("Inside dolphin")
+      dolphin_sound.play()
+      sounds_played.push(dolphin_sound);
+      times.push(timecount);
+    }
+   
+    
+    if ((mouseX<=(goat_x+aimg_width)&& mouseX>=goat_x) && (mouseY<=(goat_y+aimg_height)&&mouseY>=goat_y)){
+      console.log("Inside goat");
+      goat_sound.play();
+      sounds_played.push(goat_sound);
+      times.push(timecount);
+    }
+    
+    if ((mouseX<=(duck_x+aimg_width)&& mouseX>=duck_x) && (mouseY<=(duck_y+aimg_height)&&mouseY>=duck_y)){
+      console.log("Inside duck");
+      duck_sound.play();
+      sounds_played.push(duck_sound);
+      times.push(timecount);
+    }
+    
+    if ((mouseX<=(dog_x+aimg_width)&& mouseX>=dog_x) && (mouseY<=(dog_y+aimg_height)&&mouseY>=dog_y)){
+      console.log("Inside dog");
+      dog_sound.play();
+      sounds_played.push(dog_sound);
+      times.push(timecount);
+    }
   
-  if ((mouseX<=(cat_x+aimg_width)&& mouseX>=cat_x) && (mouseY<=(cat_y+aimg_height)&&mouseY>=cat_y)){
-    console.log("Inside cat");
-    cat_sound.play()
+    if ((mouseX<=(cow_x+aimg_width)&& mouseX>=cow_x) && (mouseY<=(cow_y+aimg_height)&&mouseY>=cow_y)){
+      console.log("Inside cow");
+      cow_sound.play();
+      sounds_played.push(cow_sound);
+      times.push(timecount);
+    }
+    
+    if ((mouseX<=(bird_x+aimg_width)&& mouseX>=bird_x) && (mouseY<=(bird_y+aimg_height)&&mouseY>=bird_y)){
+      console.log("Inside bird");
+      bird_sound.play();
+      sounds_played.push(bird_sound);
+      times.push(timecount);
+      
+    }
+    
+    if ((mouseX<=(cat_x+aimg_width)&& mouseX>=cat_x) && (mouseY<=(cat_y+aimg_height)&&mouseY>=cat_y)){
+      console.log("Inside cat");
+      cat_sound.play();
+      sounds_played.push(cat_sound);
+      times.push(timecount);
+    }
+    
+     if ((mouseX<=(sheep_x+aimg_width)&& mouseX>=sheep_x) && (mouseY<=(sheep_y+aimg_height)&&mouseY>=sheep_y)){
+      console.log("Inside sheep");
+      sheep_sound.play();
+      sounds_played.push(sheep_sound);
+      times.push(timecount);
+    } 
   }
-  
-   if ((mouseX<=(sheep_x+aimg_width)&& mouseX>=sheep_x) && (mouseY<=(sheep_y+aimg_height)&&mouseY>=sheep_y)){
-    console.log("Inside sheep");
-    sheep_sound.play();
-    sounds_played.push(sheep_sound);
-    times.push(timecount);
-  } 
-
 }
 
 
@@ -237,9 +227,7 @@ function revealSoundcloud() {
     console.log(widgetIframe)
     var p5canvas = document.getElementById('defaultCanvas0');
     var soundLogo = document.getElementById('soundcloudLogo');
-    var bottomTime = document.getElementsByClassName('bottomTime');
     var removeRemix = document.getElementById("removeRemix");
-    var remixbutton = document.getElementById("remixButton");
     if (revealerCount % 2 == 0) {
         //I will disable this posible for my project
         soundLogo.style.display = "none";
@@ -252,6 +240,9 @@ function revealSoundcloud() {
         console.log(timecount);
         sounds_played = [];
         times = [];
+        doRemixing = false;
+        $('#remixButton').css('pointer-events', 'none');
+        $('#remixButton').css('border', '');
 
     }
     else if (revealerCount % 2 == 1) {
@@ -261,7 +252,7 @@ function revealSoundcloud() {
         removeRemix.style.display = "none";
         timecount = 0;
         $('#remixButton').css('pointer-events', 'all');
-        console.log();
+        $('#remixButton').css('border', '3px solid #000000');
       
         
     }
