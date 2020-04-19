@@ -1,0 +1,54 @@
+/* CSS files add styling rules to your content */
+
+html, body{
+  margin:0;
+  overflow:hidden;
+  background-color:rgb(150, 0, 150);
+}
+html *
+{
+   font-family: Helvetica !important;
+}
+
+canvas{
+/*   position: absolute; */
+}
+#soundcloudLogo {
+  pointer-events: none;
+  display: none;
+}
+#sc-widget {
+  height: 375px;
+  width: 45%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#defaultCanvas0 {
+  opacity: 0.4;
+}
+
+#reveal {
+  position: absolute;
+  top: 0%;
+  left: 4%;
+  width: 9%;
+  height: 12%;
+  font-style:"Times New Roman";
+  font-size:100%;
+}
+
+#remixButton{
+  position:absolute;
+  top: 0%;
+  right: 4%;
+  width: 9%;
+  height: 12%;
+  font-style:"Times New Roman";
+  font-size:100%;
+  pointer-events:none;
+  
+}

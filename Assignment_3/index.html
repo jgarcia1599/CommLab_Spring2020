@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CL-Sound</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script> 
+    <script type="text/javascript" src="script.js"></script>
+  </head>  
+  <body>
+    <button onclick="revealSoundcloud()" id="reveal">
+      <iframe
+        id="soundcloudLogo"
+        allowtransparency="true"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fsteven-wyks&color=orange_transparent&size=64&auto_play=true"
+        style="width: 64px; height: 64px;"
+      ></iframe>
+      <div id="removeRemix">
+        Start Remix
+      </div>
+    </button>
+    <iframe
+        id="sc-widget"
+        scrolling="no" 
+        frameborder="no" 
+        allow="autoplay" 
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1034972566"
+    ></iframe>
+    <button onclick="doRemix()" id="remixButton">
+      Do Remix
+    </button>
+
+
+    <script></script>
+  </body>
+</html>
