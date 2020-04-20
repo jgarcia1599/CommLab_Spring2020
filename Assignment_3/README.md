@@ -18,6 +18,6 @@ From my end, the first hurdle I needed to overcome was to resolve the conflicts 
 
 ## Reflection and Evaluation
 
-This was my favorite project as it was both really playful and really interesting to code. I like working with different API and libraries and see if there exists any possible collaborations within them. I also like working on playful things that make users smile. 
+This was my favorite project as it was both really playful and really interesting to code. I like working with different APIs and libraries and see if there exists any possible collaborations within them. I also like working on playful things that make users smile. 
 
 
