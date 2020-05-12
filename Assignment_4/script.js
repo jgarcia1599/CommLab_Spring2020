@@ -10,13 +10,14 @@ let heartImg;
 var heart_type = "heart";
 
 console.log("hi");
-function setup() {
-  frameRate(60)
-  background(255);
+function preload(){
   heartImg = loadImage("img/heart.webp");
-  // heartImg = loadImage("img/heart.webp")
   brokenImg = loadImage("img/sad.png");
-  background(255);
+
+}
+function setup() {
+  background(255, 219, 250);
+  createCanvas(windowWidth,windowHeight);
   for (var i = 0;i<20;i++){
     //even, then positive orientation 
     if (i % 2 ==0){
@@ -32,7 +33,8 @@ function setup() {
 }
 
 function draw(){
-  background(255);
+  background(255, 219, 250);
+  // console.log("gay");
   for (var i = 1;i<circles.length;i++){
     circles[i].display()
   }
@@ -80,6 +82,8 @@ class Circle{
     this.drawCircle();
   }  
 }
+
+
 //Youtube Stuff
 var beginning_video = "y1d0fFTjasM";
 var ending1 = "nTpkFyjQ32c";//happy ending
@@ -119,6 +123,7 @@ function showending1(){
   console.log("show ending 1");
   document.getElementById("chooseendings").style.display="none";
   document.getElementById('reload').style.display = "block";
+  // document.getElementById('goback').style.display = "block";
   player = new YT.Player('ending', {
     height: '390',
     width: '640',
@@ -135,6 +140,7 @@ function showending2(){
   console.log("show ending 2");
   document.getElementById("chooseendings").style.display="none";
   document.getElementById('reload').style.display = "block";
+  // document.getElementById('goback').style.display = "block";
   player = new YT.Player('ending', {
     height: '390',
     width: '640',
