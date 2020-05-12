@@ -1,0 +1,29 @@
+html, body{
+    margin:15px;
+    font-family: 'Jost', sans-serif;
+    min-width: 1200px;
+    position: relative;
+    /* background-color: rgb(185, 244, 250); */
+  }
+ h1{
+    font-size: 400%;
+    text-align: center;
+  }
+  #content{
+      margin:10px;
+
+  }
+  #content button{
+      text-align: center;
+      margin: auto;
+      border-radius: 12px;
+      background-color: rgb(201, 201, 201); /* Green */
+      border: none;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+  }

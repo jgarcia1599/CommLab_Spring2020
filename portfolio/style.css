@@ -1,0 +1,36 @@
+/* CSS files add styling rules to your content */
+html, body{
+  margin:0;
+  font-family: 'Jost', sans-serif;
+  min-width: 1200px;
+}
+canvas{
+  position:fixed; 
+  top:0; 
+  left:0; 
+  z-index:1;
+}
+
+#content{
+  position:relative; 
+  text-align: center;
+  z-index:2; 
+}
+#content h1{
+  font-size: 400%;
+}
+
+#clickp{
+   cursor: pointer;
+}
+
+#pagetitle{
+  height:auto;
+  margin-top: 10px;
+}
+.sectionlink{
+  text-decoration: none!important;
+  color:black;
+
+
+}
