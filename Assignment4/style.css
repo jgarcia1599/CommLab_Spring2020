@@ -1,0 +1,54 @@
+/* CSS files add styling rules to your content */
+html, body{
+  margin:0;
+  overflow:hidden;
+  background-color:rgb(150, 0, 150);
+  text-align: center;
+  min-width: 1200;
+}
+canvas{
+  position:fixed; 
+  top:0; 
+  left:0; 
+  z-index:1;
+  opacity: 0.4;
+  min-width: 1200;
+}
+
+#content{
+  position:relative; 
+    text-align: center;
+  z-index:2; 
+
+}
+#content h1{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 400%;
+
+}
+#content p{
+  /* font-family: 'Libre Baskerville', serif; */
+  font-family: 'Merriweather', serif;
+
+}
+#chooseendings{
+  margin:10%;
+  font-family: 'Merriweather', serif;
+
+}
+.choose{
+  border-radius: 12px;
+  background-color: rgb(175, 76, 150); /* Green */
+  border: none;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#reload{
+  margin-left:45%;
+  position:fixed;
+}

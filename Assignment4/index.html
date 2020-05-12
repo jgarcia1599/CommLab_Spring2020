@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Love</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://www.youtube.com/player_api"></script>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Merriweather&display=swap" rel="stylesheet">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  </head>  
+  <body>
+    <div id="content">
+      <h1>Love in Times of Corona</h1>
+    <div id="beginningtext">
+      <p> This is a love story. One that will stand the test of time and in these unprecedented times, the test of Coronavirus.</p>
+    </div>
+    <div id="player"></div>
+    <div id="chooseendings" style="display:none;">
+      <p>The COVID-19 Pandemic Finally came to an end shortly after Tom's and Jessica's 1st Year anniversary. After such a long time of being an online entity to each other, the time came for them to see each other in person for the first time. Will their love be able to withstand the immediacy of face-to-face interaction?</p>
+      <button class="choose" onclick="showending1()">Yes</button>
+      <button class="choose" onclick="showending2()" > No</button>
+    </div>
+    <div id="ending">
+    </div>
+    <button id="reload" class="choose" onclick="reload()" style="display:none;">Watch Again</button>
+    <!-- style="display:none;" -->
+
+
+  </body>
+</html>
