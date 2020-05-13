@@ -27,3 +27,18 @@ html, body{
       margin: 4px 2px;
       cursor: pointer;
   }
+  #goback{
+	width:50px;
+	height:50px;
+    top:0;
+    left:0;
+    z-index: 2;
+    margin-bottom: 0;
+    padding-bottom: 0rem;
+    cursor: pointer;
+}
+#content button a{
+    text-decoration: none;
+    color:black;
+
+}

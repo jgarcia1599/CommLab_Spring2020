@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<head>
-	<title>Portfolio Site</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
-</head>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="http://www.youtube.com/player_api"></script>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+  </head>  
+  <body>
+    <div id="content"> 
+    <p id="clickp" onclick="displayname()">Click to know my name</p>
+    <div id="pagetitle" style="display:none;">
+      <h1>Junior Francisco Garcia</h1>
+      <p>A Communications Lab Portfolio</p>
+      <h2><a class="sectionlink" href="documentation/web.html">Web</a> | <a class="sectionlink" href="documentation/comic.html">Comic</a> | <a class="sectionlink" href="documentation/sound.html">Sound</a> | <a class="sectionlink" href="documentation/video.html">Video</a></h2>
+    </div>
 
-<body>
-	<header>
-		<h1 id="siteTitle">Portfolio Site</h1>
-	</header>
 
-	<nav>
-		<a href="Assignment_1/index.html"><div class="nav-item">30MFF</div></a>
-		<a href="Assignment_2/index.html"><div class="nav-item">Comic</div></a>
-		<a href="Assignment_3/index.html"><div class="nav-item">Audio</div></a>
-		<a href="Assignment_4/index.html"><div class="nav-item">Video</div></a>
-		<a href="#"><div class="nav-item">Documentation</div></a>
-	</nav>
+    </div>
 
 
-
-
-</body>
+  </body>
 </html>
