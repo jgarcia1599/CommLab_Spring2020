@@ -1,7 +1,6 @@
 /* CSS files add styling rules to your content */
 html, body{
   margin:0;
-  background-color:rgb(150, 0, 150);
   text-align: center;
   min-width: 1200;
 }
