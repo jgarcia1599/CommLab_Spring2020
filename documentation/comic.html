@@ -2,9 +2,28 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Comic</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon stuff -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../favicon.ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../favicon.ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../favicon.ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../favicon.ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../favicon.ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../favicon.ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../favicon.ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../favicon.ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon.ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../favicon.ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon.ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../favicon.ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.ico/favicon-16x16.png">
+        <link rel="manifest" href="../favicon.ico/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="f../avicon.ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
@@ -23,16 +42,16 @@
             <h2>Process</h2> 
             <p>I was in charge of coding and designing the website, while Deena was in charge of drawing the comic panels. We both came up with the questions and  the storyline. Below is a picture of our first brainstorming session, and the different prototypes we made along the way in order to deliver the final result. A disclaimer, I tend to make notes that make no sense so I apologize if you can't make sense of them. I love the feeling that comes from looking at the final result in comparison to the incomprehensible mess that are my initial notes and drawings. </p>
 
-            <h2>First Brainstorming Session:</h2>
+            <h2>First Brainstorming Session</h2>
 
-            <img src="../Assignment_2/media/proto/proto1.jpg" style="width:50%; height:50%">
-            <img src="../Assignment_2/media/proto/proto2.jpg" style="width:50%; height:50%">
-            <img src="../Assignment_2/media/proto/proto3.jpg"style="width:50%; height:50%">
+            <img class="docimg" src="../Assignment_2/media/proto/proto1.jpg" style="width:50%; height:50%">
+            <img class="docimg" src="../Assignment_2/media/proto/proto2.jpg" style="width:50%; height:50%">
+            <img class="docimg" src="../Assignment_2/media/proto/proto3.jpg"style="width:50%; height:50%">
 
 
-            <h2>First Protype: </h2>
-            <img src="../Assignment_2/media/proto/proto4.png" style="width:50%; height:50%">
-            <img src="../Assignment_2/media/proto/proto5.png" style="width:50%; height:50%">
+            <h2>First Protype </h2>
+            <img class="docimg" src="../Assignment_2/media/proto/proto4.png" style="width:50%; height:50%">
+            <img class="docimg" src="../Assignment_2/media/proto/proto5.png" style="width:50%; height:50%">
             <p>The website was created using HTML, CSS, Javascript, with a particular reliance on Animate on Scroll (AOS.js) for the fading animations in the initial panel, Jquery for user-input manipulation, and snap-align (CSS property) for the comic’s scroll snapping experience. The web comics are  first hidden to the user using Jquery, and the user must answer the questions and submit the form for the comic panels to appear. I initially wanted to somehow “disable scrolling” for the user, but the aforementioned proved to be easier to implement.  The user input is then preprocessed using jquery and javascript and then placed on a div element that lies on top of the image. This div element  is placed specifically where it needs to be on the panel’s text bubble, a position that is hardcoded in the div element’s CSS property but also designed to be responsive using relative positioning in respect to the size of the image on the viewport using percentage sizing. The snap-align CSS property allows for the user to snap through the different comic panels, an experience that resembles flipping different pages of a comic book. At the end, the page is reloaded using jquery after the user clicks on the text that says “Click here to generate a new Confessions Experience”. </p>
 
             <h2>Reflection/Evaluation</h2>

@@ -156,3 +156,8 @@ if (hasvisted =="true"){
 
 
 }
+
+
+//Popup stuff
+
+$('#popup1').popup();

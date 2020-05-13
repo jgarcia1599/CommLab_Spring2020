@@ -1,3 +1,6 @@
+html,body{
+  min-width: 1200px;
+}
 
 header{
   background-color: rgb(255, 73, 73); /*orange*/
@@ -29,6 +32,7 @@ header{
 }
 .pacman{
   border-style: solid;
+  min-width: 1000px;
 }
 
 .headerimg:hover{
@@ -75,13 +79,6 @@ main{
   cursor: pointer;
 
 }
-
-
-
-
-
-
-/* ------------------- RESPONSIVE IMAGE GRID -------------------------*/
 * {
     box-sizing: border-box;
   }
@@ -111,25 +108,17 @@ main{
     vertical-align: middle;
     height:120px;
   }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .row .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .row .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
 
  #starbucks {
     width: 32%;
     margin-left: 35%;
 }
-  /* ------------------- RESPONSIVE IMAGE GRID -------------------------*/
+
+#goback{
+	width:50px;
+	height:50px;
+  bottom:4px;
+  left:2px;
+  position: fixed;
+  cursor: pointer;
+}

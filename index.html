@@ -4,6 +4,28 @@
     <title>Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon stuff -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+    <link rel="manifest" href="favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
@@ -11,6 +33,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
     <script src="http://www.youtube.com/player_api"></script>
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -21,11 +44,15 @@
   </head>  
   <body>
     <div id="content"> 
-    <p id="clickp" onclick="displayname()">Click to know my name</p>
+    <p id="clickp" onclick="displayname()">Click to know me!</p>
     <div id="pagetitle" style="display:none;">
       <h1>Junior Francisco Garcia</h1>
-      <p>A Communications Lab Portfolio</p>
+      <p>A <a class="popup1_open" href="#">Communications Lab</a> Portfolio</p>
       <h2><a class="sectionlink" href="documentation/web.html">Web</a> | <a class="sectionlink" href="documentation/comic.html">Comic</a> | <a class="sectionlink" href="documentation/sound.html">Sound</a> | <a class="sectionlink" href="documentation/video.html">Video</a></h2>
+      <img src="img/logo.png">
+      <section id="popup1">
+        <p>Communications Lab is a production based course taught at <a href="https://nyuad.nyu.edu/en/">NYUAD</a> that surveys various technologies including web development, sound, 2D design, digital imaging, video, effects and animation. The forms and uses of these communications technologies are explored in a laboratory context of experimentation, collaboration, and discussion. Much of class time will be spent introducing and playing with equipment and software essential to media production and contemporary storytelling. Each technology is examined as a tool that can be employed and utilized in a variety of situations and experiences. Students will gain fundamental experience thinking, writing, and producing across a variety of media. The world wide web will serve as the primary environment for content delivery and user-interaction. Principles of interpersonal communications and media theory are also introduced with an emphasis on storytelling fundamentals, user-­centered design, and interactivity. Outside of the classroom, students will work both individually and in assigned groups on a variety of assignments. Each major assignment will have a written and practical component. In sum, students will be expected to complete weekly readings, homework exercises, four major group assignments, and one final web portfolio project.</p>
+      </section>
     </div>
 
 

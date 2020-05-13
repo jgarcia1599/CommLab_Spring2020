@@ -14,8 +14,8 @@ html, body{
 
   }
   #content button{
-      text-align: center;
-      margin: auto;
+      /* text-align: center;
+      margin: auto; */
       border-radius: 12px;
       background-color: rgb(201, 201, 201); /* Green */
       border: none;
@@ -26,6 +26,8 @@ html, body{
       font-size: 16px;
       margin: 4px 2px;
       cursor: pointer;
+      display: block;
+      margin: 0 auto;
   }
   #goback{
 	width:50px;
@@ -41,4 +43,8 @@ html, body{
     text-decoration: none;
     color:black;
 
+}
+.docimg{
+    display: block;
+    margin: 0 auto;
 }
